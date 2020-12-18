@@ -12,3 +12,10 @@ CREATE TABLE employee_payroll
  start DATE NOT NULL,
  PRIMARY KEY (id)
 );
+
+UC_3
+INSERT INTO employee_payroll (name, salary, start) VALUES
+('Bill', 1000000.0, '2018-01-03'),
+('Terisa', 2000000.0, '2019-11-13'),
+('Mark', 3000000.0, '2020-05-21');
+
