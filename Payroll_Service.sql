@@ -19,3 +19,5 @@ INSERT INTO employee_payroll (name, salary, start) VALUES
 ('Terisa', 2000000.0, '2019-11-13'),
 ('Mark', 3000000.0, '2020-05-21');
 
+UC_4
+SELECT * FROM employee_payroll;
