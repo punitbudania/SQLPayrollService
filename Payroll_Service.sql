@@ -29,3 +29,6 @@ SELECT * FROM employee_payroll WHERE start BETWEEN CAST('2018-01-01' AS DATE) AN
 UC_6
 ALTER TABLE employee_payroll ADD gender CHAR(1) AFTER name;
 UPDATE employee_payroll set gender = "M" where name = "Bill" or name = "Mark";
+
+UC_7
+SELECT SUM(salary) FROM employee_payroll WHERE gender = "M" GROUP BY gender;
