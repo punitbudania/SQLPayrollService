@@ -46,3 +46,8 @@ ALTER TABLE employee_payroll ADD taxable_pay DOUBLE NOT NULL AFTER deductions;
 ALTER TABLE employee_payroll ADD income_tax DOUBLE NOT NULL AFTER taxable_pay;
 ALTER TABLE employee_payroll ADD net_pay DOUBLE NOT NULL AFTER income_tax;
 
+UC_10
+INSERT INTO employee_payroll (id, name, phone_number, address, department, gender, basic_pay, deductions, taxable_pay, tax, net_pay, start)
+VALUES (4, 'Terisa', NULL, 'TBD', 'Marketing', 'F', 3000000.0, 1000000.0, 2000000.0, 500000.0, 1500000.0, '2018-01-03');
+
+
