@@ -32,3 +32,10 @@ UPDATE employee_payroll set gender = "M" where name = "Bill" or name = "Mark";
 
 UC_7
 SELECT SUM(salary) FROM employee_payroll WHERE gender = "M" GROUP BY gender;
+
+UC_8
+ALTER TABLE employee_payroll ADD phone_number VARCHAR(250) AFTER name;
+ALTER TABLE employee_payroll ADD address VARCHAR(250) AFTER phone_number;
+ALTER TABLE employee_payroll ADD department VARCHAR(250) AFTER address;
+ALTER TABLE employee_payroll ALTER address SET DEFAULT 'TBD';
+
